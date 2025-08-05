@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>個人部落格</title>
+    <title>自我介紹</title>
     <link rel="icon shortcut" href="./img/favicon.ico">
     <!-- 連結Bootstrap.min.css -->
     <!-- TODO: 客製化Bootstrap CSS -->
@@ -50,13 +50,13 @@
                     <a class="nav-link" href="#experienceSection">過往經歷</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#introSection">學習歷程</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#skillSection">程式技能</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Introduction">簡介</a>
+                    <a class="nav-link" href="#introSection">學習歷程</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#featuresSection">過往經歷</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#reviewsSection">證書與專利圖片與比賽獎狀</a>
@@ -90,80 +90,66 @@
                 <div class="col-md-8">
                     <!-- 設置collapse互動方式 -->
                     <button class="btn btn-primary" data-toggle="collapse" data-target="#learningExperience" aria-expanded="true">程式學習經歷與個人優點</button>
-                    <!-- <button class="btn btn-primary" data-toggle="collapse" data-target="#collaboration">產學合作</button>
-                    <button class="btn btn-primary" data-toggle="collapse" data-target="#competition">比賽經歷</button> -->
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#collaboration">產學合作</button>
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#competition">比賽經歷</button>
 
                     <!-- 學習歷程 -->
                     <div id="learningExperience" class="collapse show">
                         <article class="my-3">
-                            <h2>程式學習經歷與個人優點</h2>
+                            <h3>程式學習經歷與個人優點</h3>
+                            <div class="container">
+                                <h2>前端開發:</h2>
+                                <ul class="list">
+                                    <li>HTML5、CSS、jQuery、Bootstrap、JavaScript 基礎課程</li>
+                                    <li>HTML5、CSS、jQuery、Bootstrap、JavaScript 進階課程</li>
+                                    <li>React Native APP開發製作課程</li>
+                                    <li>vue</li>
+                                </ul>
+                            </div>
+                            
                             <div class="section">
                                 <div class = "row">
                                 <h2>C++ 深入研究:</h2>
                                 <ul>
+                                    <li>C++ 基礎課程</li>
                                     <li>C++ 進階課程</li>
                                     <li>C++ 資料結構課程</li>
                                     <li>C++ 演算法課程</li>
-                                    <li>C++ 演算法進階</li>
                                     <li>C++ 多執行緒與並行程式設計基礎課程</li>
                                     <li>C++ 資料結構與泛型程式設計基礎課程</li>
                                     <li>C++ 物件導向與設計模式基礎</li>
                                     <li>C++ 初階Leetcode演算法解題班課程</li>
                                     <li>C++ 進階Leetcode演算法解題班課程</li>
                                 </ul>
-                                
+                            </div>
                             </div>
                             
                             <div class="section">
-                            <div class = "row">
+                                <div class = "row">
                                 <h2>Java學習:</h2>
                                 <ul>
+                                    <li>Java 基礎課程</li>
                                     <li>Java 進階課程</li>
-                                    <li>springBoot</li>
-                                    <li>spring security</li>
-                                    <li>spring框架與設計模式</li>
-                                    <li>併發與編成</li>
-                                    <li>網路編成</li>
-                                    <li>Mybatis</li>
-                                    <li>Mybatis Plus</li>
-                                    <li> swing </li>
+                                    <li>Java 網路編成</li>
+                                    <li>Java springBoot</li>
+                                    <li>Java springMVC</li>
                                     <li>Hibernate</li>
-                                    <li>多線程</li>
-                                    <li>Redis</li>
-                                    <li>swagger</li>
                                 </ul>
-                                
                             </div>
-                            </div>
-                            
                             <div class="section">
-                            <div class = "row">
+                                <div class = "row">
                                 <h2>Python探討:</h2>
                                 <ul>
+                                    <li>Python 基礎課程</li>
                                     <li>Python 進階課程</li>
                                     <li>Python 資料庫與伺服器建立</li>
-                                    <li>Python 資料分析</li>
-                                    <li>Python AI人工智慧與機器學習</li>
                                 </ul>
-                                
+                            </div>
                             
-                            </div>
                             <div class="section">
-                            <div class = "row">
-                                <h2>前端開發:</h2>
-                                <ul class="list">
-                                    <li>HTML5、CSS、jQuery、Bootstrap、JavaScript 基礎課程</li>
-                                    <li>HTML5、CSS、jQuery、Bootstrap、JavaScript 進階課程</li>
-                                    <li>React Native APP開發製作課程</li>
-                                    <li>AJAX</li>
-                                    <li>vue 3</li>
-                                </ul>
-                               
-                            </div>
-                            <div class="section">
-                            <div class = "row">
+                                <div class = "row">
                                 <h2>資料庫操作與分析:</h2>
-                                <ul> 
+                                <ul>
                                     <li>JDBC 開發實作班</li>
                                     <li>SQL 資料分析班</li>
                                     <li>MYSQL 資料庫</li>
@@ -172,29 +158,19 @@
                             </div>
                             
                             <div class="section">
-                            <div class = "row">
-                                <h2>自學與進修:台大資訊系統訓練班與緯育與網課</h2>
+                                <div class = "row">
+                                <h2>自學與進修:</h2>
                                 <ul>
-                                    <li>HTML5, CSS3, jQuery, Bootstrap, JavaScript 初階班</li>
-                                    <li>HTML5, CSS3, jQuery, Bootstrap, JavaScript 進階班</li>
-                                    <li>C++基礎班</li>
-                                    <li>C++進階班</li>
-                                    <li>C++資料結構班</li>
-                                    <li>C++程式解題基礎班</li>
-                                    <li>C++演算法班</li>
-                                    <li>C++程式解題入門實戰班</li>
-                                    <li>C++資料結構與泛型程式設計基礎班</li>
-                                    <li>C++多執行緒與並行程式設計基礎班</li>
-                                    <li>leetcodeC++程式解題基礎實戰班</li>
-                                    <li>leetcodeC++程式解題進階實戰班</li>
-                                    <li>java基礎程式班</li>
-                                    <li>java進階程式班</li>
-                                    <li>python基礎程式班 </li>
-                                    <li>python進階程式班</li>
-                                    <li>React Native班</li>
-                                    <li>SQL資料分析班</li>
                                     <li>購買 HAHOW 上的 Spring Boot 和 Vue 教學視頻進行學習與JavaScript課程</li>
                                     <li>觀看 Bilibili 上的 Java 後端相關教程（如 MyBatis、Spring MVC、Swagger、JavaWeb）</li>
+                                </ul>
+                            </div>
+                            </div>
+                            
+                            <div class="section">
+                                <div class = "row">
+                                <h2>專業技術提升:</h2>
+                                <ul>
                                     <li>參加緯育的 Java JDBC開發實作班</li>
                                     <li>參加緯育的 Java 雲端服務開發技術養成班</li>
                                 </ul>
@@ -202,28 +178,18 @@
                             </div>
                             <div class="section">
                                 <div class = "row">
-                                    <h2>相關證照</h2>
-                                    <ul>
-                                        <li>物聯網智慧應用及技術(專業級)(Photo4)</li>
-                                    </ul>
-                                </div>
-                                </div>
-                            <div class="section">
-
-                            <div class = "row">
                                 <h2>寫過程式特別經歷:</h2>
                                 <ul>
-                                    <li>寫過多個專利(Photo1)</li>
-                                    <li>得過2022高雄發明展金牌(Photo2、Photo3)</li>
-                                    <li>用c++寫過關於系統速度方面</li>
+                                    <li>用c++寫過速度方面</li>
                                     <li>用python寫過(溫度監控、人臉識別、伺服器、抓取資料與分析、網路爬蟲)</li>
                                     <li>簡易型購物車</li>
+                                    <li>用java連接過國家身分證系統</li>
                                 </ul>
                             </div>
                             </div>
 
                             <div class="section">
-                            <div class = "row">
+                                <div class = "row">
                                 <h2>個人優點:</h2>
                                 <ul>
                                     <li>擁有強大的自我學習能力，能迅速掌握新技術和工具</li>
@@ -238,24 +204,24 @@
                     </div>
 
                     <!-- 產學合作 -->
-                    <!-- <div id="collaboration" class="collapse">
+                    <div id="collaboration" class="collapse">
                         <article class="my-3">
                             <h3>產學合作</h3>
                             <p>在參與產學合作專案中，我負責開發一個基於Python的人臉辨識系統，並使用MySQL搭建臨時資料庫來收集和管理人臉資料。
                                 專案中，我運用了OpenCV和dlib進行人臉偵測與特徵點提取，結合深度學習技術來提高辨識準確度。
-                                我還設計了一個自動化的數據收集流程透過機器掃描人臉，將偵測到的人臉資料直接存儲至MySQL資料庫中來進行測試，以便後續分析和應用在醫療方面。
-                                這次經驗不僅加深了我對影像處理與機器學習的理解，也提升了我在資料庫管理與應用開發中的實踐能力，並應用在醫院的醫療應用上</p>
+                                我還設計了一個自動化的數據收集流程透過機器掃描人臉，將偵測到的人臉資料直接存儲至MySQL資料庫中來進行測試，以便後續分析和應用。
+                                這次經驗不僅加深了我對影像處理與機器學習的理解，也提升了我在資料庫管理與應用開發中的實踐能力，並應用在醫院的醫療器材上</p>
                         </article>
-                    </div> -->
+                    </div>
 
                     <!-- 比賽經歷 -->
-                    <!-- <div id="competition" class="collapse">
+                    <div id="competition" class="collapse">
                         <article class="my-3">
                             <h3>國內比賽</h3>
                             <a href="https://rdn.aeust.edu.tw/p/404-1058-45006-1.php?Lang=zh-tw">連結網站</a>
                             <p>這個專題設計了一個基於物聯網的溫度監控與即時訊息回傳系統。系統使用高精度溫度感測器實時監測環境溫度，
                                 並通過微控制器進行數據處理和閾值判斷。一旦溫度異常，系統會自動通過無線通訊模組將警報訊息發送至用戶設備，
-                                並將數據存儲在雲端平台，方便遠程監控。在之名科技大賽中，該專題憑藉其創新性和實用性獲得了金牌，展示了廣泛的應用潛力。</p>
+                                並將數據存儲在雲端平台，方便遠程監控。在某知名科技大賽中，該專題憑藉其創新性和實用性獲得了金牌，展示了廣泛的應用潛力。</p>
                         </article>
                         <article class="my-3">
                             <h3>2022高雄發明展取得金牌</h3>
@@ -266,16 +232,22 @@
                         <article id="article3" class="my-3">
                             <h3>2023馬來西亞發明展</h3>
                             <a href="https://os.aeust.edu.tw/p/406-1004-46339,r646.php?Lang=zh-tw">連結網站</a>
-                            <p></p>
+                            <p>參加2023年馬來西亞發明展是一個寶貴的經驗，讓我展示了自己的創新項目，並與來自世界各地的發明家和專家交流。
+                                在展會中，我不僅學習到了最新的科技趨勢，還通過參加各種研討會，深化了對創新和研發的理解。此外，
+                                這次展會也讓我結識了許多志同道合的創新者，為未來的合作奠定了基礎。這次經歷激勵我持續創新，為科技進步貢獻力量。
+                            </p>
                         </article>
                         <article id="article4" class="my-3">
                             <h3>2023年第19屆韓國首爾國際發明展（SIIF）</h3>
                             <a href="https://www.ctee.com.tw/news/20231104700378-431207">連結網站</a>
-                            <p></p> -->
+                            <p>參加2023年韓國首爾展是一個難忘的經歷，我在展會中展示了自己的創新成果，並與韓國及其他國家的創新者進行了深入交流。
+                                這次展會讓我了解了韓國在科技和設計領域的最新發展，並參加了多場專業講座，擴展了我的視野。此外，
+                                展會中建立的人脈關係為未來的合作提供了新的機會。這次經歷讓我更加堅定在創新道路上前行，為推動科技進步而努力。
+                            </p>
                             <!-- 崁入影片 -->
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XlGaZgVLQFQ?si=v2agyv76Aw_dV75j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XlGaZgVLQFQ?si=v2agyv76Aw_dV75j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </article>
-                    </div> -->
+                    </div>
                     
                 </div>
             </div>
@@ -302,42 +274,7 @@
     
         <!-- 設定此區塊距離上方5倍margin -->
         <!-- 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
-        <section id="introSection" class="py-5">
-            <!-- 設定以下h1 margin-bottom為5倍 -->
-            <h1 class="section-title text-center text-secondary mb-5">學習歷程</h1>
-            <div class="container">
-                <!-- 修正排版為三項排一排 並置中文字-->
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <div class="intro-box">
-                            <div class="icon text-primary py-3">
-                                <i class="fas fa-paper-plane fa-5x" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="text-secondary">程式興趣</h3>
-                            <p>發現對寫程式感興趣</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="intro-box">
-                            <div class="icon text-primary py-3">
-                                <i class="fas fa-briefcase fa-5x" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="text-secondary">在校外上課</h3>
-                            <p>有去台大資訊班與緯育上課</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="intro-box">
-                            <div class="icon text-primary py-3">
-                                <i class="fas fa-gem fa-5x" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="text-secondary">自我實現</h3>
-                            <p>在大學的時候有寫過畢業專題與參與產學合作專案，並且取得多個金牌與第一名的名次</p>
-                        </div>
-                    </div>
-                </div>
-    </div>
-<section id="skillSection">
+        <section id="skillSection">
             <h1 class="section-title text-center text-secondary mb-5">程式技能</h1>
             <div class="row mt-5">
                 <div class="col-md-2 col-sm-4 col-6 text-center">
@@ -361,20 +298,20 @@
                     <h5 class="mt-3 text-secondary">JAVASCRIPT</h5>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 text-center">
-                    <img src="./img/img22.png">
-                    <h5 class="mt-3 text-secondary">REACT NATIVE</h5>
-                </div>
-                <div class="col-md-2 col-sm-4 col-6 text-center">
-                    <img src="./img/img30.png">
-                    <h5 class="mt-3 text-secondary">VUE</h5>
-                </div>
-                <div class="col-md-2 col-sm-4 col-6 text-center">
                     <img src="./img/img20.png">
                     <h5 class="mt-3 text-secondary">MYSQL</h5>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 text-center">
                     <img src="./img/img29.png">
                     <h5 class="mt-3 text-secondary">SQL資料分析</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <img src="./img/img22.png">
+                    <h5 class="mt-3 text-secondary">REACT NATIVE</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <img src="./img/img26.png">
+                    <h5 class="mt-3 text-secondary">SRE</h5>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 text-center">
                     <img src="./img/img27.png">
@@ -385,22 +322,49 @@
                     <h5 class="mt-3 text-secondary">PHP</h5>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 text-center">
-                    <img src="./img/img52.png">
-                    <h5 class="mt-3 text-secondary">mongo DB</h5>
+                    <img src="./img/img30.png">
+                    <h5 class="mt-3 text-secondary">VUE</h5>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 text-center">
                     <img src="./img/img50.png">
                     <h5 class="mt-3 text-secondary">Git</h5>
                 </div>
-                <div class="col-md-2 col-sm-4 col-6 text-center">
-                    <img src="./img/img26.png">
-                    <h5 class="mt-3 text-secondary">SRE</h5>
-                </div>
-                <div class="col-md-2 col-sm-4 col-6 text-center">
-                    <img src="./img/img53.png">
-                    <h5 class="mt-3 text-secondary">Unity</h5>
-                </div>
             </div>
+            <section id="introSection" class="py-5">
+                <!-- 設定以下h1 margin-bottom為5倍 -->
+                <h1 class="section-title text-center text-secondary mb-5">學習歷程</h1>
+                <div class="container">
+                    <!-- 修正排版為三項排一排 並置中文字-->
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="intro-box">
+                                <div class="icon text-primary py-3">
+                                    <i class="fas fa-paper-plane fa-5x" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-secondary">程式興趣</h3>
+                                <p>發現對寫程式感興趣</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="intro-box">
+                                <div class="icon text-primary py-3">
+                                    <i class="fas fa-briefcase fa-5x" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-secondary">在校外上課</h3>
+                                <p>有去台大資訊班與緯育上課</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="intro-box">
+                                <div class="icon text-primary py-3">
+                                    <i class="fas fa-gem fa-5x" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-secondary">自我實現</h3>
+                                <p>在大學的時候有寫畢業專題與餐與產學合作專案，並且取得多個金牌與第一名的名次</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
     </section>
     <!-- introSection end -->
     
@@ -448,8 +412,6 @@
 
     <!-- 圖片輪播 end -->
     <!-- reviewsSection -->
-     <!--跳轉到簡介-->>
-    <section id="Introduction">
     <section id="reviewsSection" class="py-5">
         <!-- TODO: 使用輪播(Carousel)元件放入以下兩頁內容 -->
         <!-- 內容輪播 -->
@@ -465,7 +427,7 @@
                     <div class="row justify-content-center py-5">
                         <div class="col-sm-2">
                             <!-- 設定使用者照片變圓型 -->
-                            <img class="w-100 rounded-circle" src="./img/ken照片.jpg" alt="user photo">
+                            <img class="w-100 rounded-circle" src="./img/img31.png" alt="user photo">
                         </div>
                         <div class="col-sm-6">
                             <h3 class="title">自己</h3>
@@ -483,17 +445,47 @@
                     <div class="row justify-content-center py-5">
                         <div class="col-sm-2">
                             <!-- 設定使用者照片變圓型 -->
-                            <img class="w-100 rounded-circle" src="img/reviewer-2.jpg" alt="">
+                            <img class="w-100 rounded-circle" src="img/reviewer-2.jpg" alt="user photo">
                         </div>
                         <div class="col-sm-6">
-                            <h3 class="title">爸爸媽媽和姐姐</h3>
+                            <h3 class="title">爸媽</h3>
                             <h4 class="name">簡介</h4>
-                            <p>父親曾是一名資深的資訊工程師，擁有多年的工作經驗，如今已經退休，享受著生活的寧靜與自由。</p>
-                            <p>母親則是在壽險業從事後台開發工作的專業人士，她在職場中展現出色的技術能力和專業素養，為團隊的成功做出了重要貢獻。他們的努力和專業精神一直是我學習與成長的重要榜樣。</p>
-                            <p>我的姐姐在網購領域擁有深厚的專業知識和經驗。她專精於電商平台的運營與行銷策略，能夠有效地提升品牌曝光度並優化顧客購物體驗。她在分析市場趨勢和顧客需求方面非常擅長，並致力於利用先進的數據分析技術來制定策略，以達到最佳的銷售效果。她的專業能力不僅使她在行業內脫穎而出，還幫助許多品牌實現了顯著的增長。</p>
+                            <p>我父親曾是一名資深的資訊工程師，擁有多年的工作經驗，如今已經退休，享受著生活的寧靜與自由。
+                                母親則是在壽險業從事後台開發工作的專業人士，她在職場中展現出色的技術能力和專業素養，為團隊的成功做出了重要貢獻。他們的努力和專業精神一直是我學習與成長的重要榜樣。</p>
                         </div>
                     </div>
                     <!-- 第二頁 結束 -->
+                </div>
+
+                <div class="carousel-item">
+                    <!-- 第三頁 -->
+                    <div class="row justify-content-center py-5">
+                        <div class="col-sm-2">
+                            <!-- 設定使用者照片變圓型 -->
+                            <img class="w-100 rounded-circle" src="img/reviewer-2.jpg" alt="user photo">
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 class="title">姊姊</h3>
+                            <h4 class="name"></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- 第三頁 結束 -->
+                </div>
+                <div class="carousel-item">
+                    <!-- 第三頁 -->
+                    <div class="row justify-content-center py-5">
+                        <div class="col-sm-2">
+                            <!-- 設定使用者照片變圓型 -->
+                            <img class="w-100 rounded-circle" src="img/reviewer-2.jpg" alt="user photo">
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 class="title">兩隻可愛老鼠</h3>
+                            <h4 class="name"></h4>
+                            <p> </p>
+                        </div>
+                    </div>
+                    <!-- 第三頁 結束 -->
                 
             </div>
             <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
@@ -509,7 +501,6 @@
     </section>
     <!-- reviewsSection end -->
     <!-- modalSection -->
-    <section id="gallerySection"></section>
     <section id="modalSection" class="bg-secondary py-5">
         <div class="row justify-content-center my-5">
             <div class="col-md-3">
@@ -523,67 +514,107 @@
     <!-- TODO: 於彈出式視窗內插入Bootstrap input表單 -->
     <!-- modalSection end -->
     <!-- gallerySection -->
+    <section id="gallerySection">
         <!-- 設定此區塊為四個一排並加入hover特效 -->
         <div class="row">
             <div class="col-md-3 col-sm-6" id="galleryImage1">
-                <div class="gallery-text">Photo1(專利)</div>
+                <div class="gallery-text">Photo1</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage2">
-                <div class="gallery-text">Photo2(金牌)</div>
+                <div class="gallery-text">Photo2</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage3">
-                <div class="gallery-text">Photo3(金牌)</div>
+                <div class="gallery-text">Photo3</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage4">
-                <div class="gallery-text">Photo4(物聯網智慧應用及技術)</div>
+                <div class="gallery-text">Photo4</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage5">
-                <div class="gallery-text">Photo5(C++基礎)</div>
+                <div class="gallery-text">Photo5</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage6">
-                <div class="gallery-text">Photo6(C++進階)</div>
+                <div class="gallery-text">Photo6</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage7">
-                <div class="gallery-text">Photo7(C++leetcode進階解題)</div>
+                <div class="gallery-text">Photo7</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage8">
-                <div class="gallery-text">Photo8(C++初階解題)</div>
+                <div class="gallery-text">Photo8</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage9">
-                <div class="gallery-text">Photo9(演算法)</div>
+                <div class="gallery-text">Photo9</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage10">
-                <div class="gallery-text">Photo10(前端初階)</div>
+                <div class="gallery-text">Photo10</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage11">
-                <div class="gallery-text">Photo11(前端進階)</div>
+                <div class="gallery-text">Photo11</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage12">
-                <div class="gallery-text">Photo12(初階Leetcode演算法解題)</div>
+                <div class="gallery-text">Photo12</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage13">
-                <div class="gallery-text">Photo13(sql)</div>
+                <div class="gallery-text">Photo13</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage14">
-                <div class="gallery-text">Photo14(react)</div>
+                <div class="gallery-text">Photo14</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage15">
-                <div class="gallery-text">Photo15(java基礎)</div>
+                <div class="gallery-text">Photo15</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage16">
-                <div class="gallery-text">Photo16(java進階)</div>
+                <div class="gallery-text">Photo16</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage17">
-                <div class="gallery-text">Photo17(演算法實戰班)</div>
+                <div class="gallery-text">Photo17</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage18">
-                <div class="gallery-text">Photo18(python初階)</div>
+                <div class="gallery-text">Photo18</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage19">
-                <div class="gallery-text">Photo28(JDBC開發實作班)</div>
+                <div class="gallery-text">Photo19</div>
             </div>
             <div class="col-md-3 col-sm-6" id="galleryImage20">
-                <div class="gallery-text">Photo29(JAVA雲端開發技術樣成班)</div>
+                <div class="gallery-text">Photo20</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage21">
+                <div class="gallery-text">Photo21</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage22">
+                <div class="gallery-text">Photo22</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage23">
+                <div class="gallery-text">Photo23</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage24">
+                <div class="gallery-text">Photo24</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage25">
+                <div class="gallery-text">Photo25</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage26">
+                <div class="gallery-text">Photo26</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage27">
+                <div class="gallery-text">Photo27</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage28">
+                <div class="gallery-text">Photo28</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage29">
+                <div class="gallery-text">Photo29</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage30">
+                <div class="gallery-text">Photo30</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage31">
+                <div class="gallery-text">Photo31</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage32">
+                <div class="gallery-text">Photo32</div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="galleryImage33">
+                <div class="gallery-text">Photo33</div>
             </div>
         </div>
     </section>
@@ -597,18 +628,22 @@
                 <div class="col-md-3 col-sm-6 footer-list">
                     <h4>Join GMAIL</h4>
                     <a href="mailto:service@brand.com">kensong0518@gmail.com</a>
+                    <h4>Join FB</h4>
+                    <a href="https://www.facebook.com/?locale=zh_TW">https://www.facebook.com/?locale=zh_TW</a>
                     <h4>Join LINE</h4>
                     <a href="https://play.google.com/store/apps/details?id=jp.naver.line.android&hl=zh_TW">ID:ken0989233036</a>
-                    <h4>電話號碼</h4>
-                    <a href="">0989233036</a>
                 </div>
                 </div>
         </div>
 
         <div class="footer-end bg-dark mt-5 py-2">
-            <p class="text-center"></p>
+            <p class="text-center">&copy; Copy right 2019</p>
         </div>
     </footer>
+    <!-- TODO: 設定置底返回按鈕 返回按鈕滾動動畫 -->
+    <button id="goBackBtn" class="bg-primary">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 </body>
 
 </html>

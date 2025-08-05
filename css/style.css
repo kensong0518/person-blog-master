@@ -34,8 +34,11 @@ button:focus {
 #header {
     background-image: url('../img/headerImage.jpg');
     background-size: cover;
+<<<<<<< HEAD
     background-position-x: center;
     background-position-y: center;
+=======
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     /* 讓圖片固定在後方 */
     background-attachment: fixed;
     padding: 100px 0px;
@@ -109,14 +112,21 @@ button:focus {
 }
 
 /* 放入背景圖片 */
+<<<<<<< HEAD
 #galleryImage1 {
     background-image: url('../img/1.專利.png');
+=======
+
+#galleryImage1 {
+    background-image: url('../img/img1.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #galleryImage2 {
+<<<<<<< HEAD
     background-image: url('../img/2.金牌.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -133,108 +143,271 @@ button:focus {
 
 #galleryImage4 {
     background-image: url('../img/4.img48.png');
+=======
+    background-image: url('../img/img2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#galleryImage3 {
+    background-image: url('../img/img3.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+#galleryImage4 {
+    background-image: url('../img/img4.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+<<<<<<< HEAD
 
 #galleryImage5 {
     background-image: url('../img/5.c++基礎.png');
+=======
+#galleryImage5 {
+    background-image: url('../img/img5.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #galleryImage6 {
+<<<<<<< HEAD
     background-image: url('../img/6.c++進階.png');
+=======
+    background-image: url('../img/img6.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #galleryImage7 {
+<<<<<<< HEAD
     background-image: url('../img/7.c++leetcode進階解題.png');
+=======
+    background-image: url('../img/img7.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #galleryImage8 {
+<<<<<<< HEAD
     background-image: url('../img//8.c++初階解題.png');
+=======
+    background-image: url('../img/img8.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+<<<<<<< HEAD
 
 #galleryImage9 {
     background-image: url('../img/9.c++演算法.png');
+=======
+#galleryImage9{
+    background-image: url('../img/img9.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+<<<<<<< HEAD
 #galleryImage10{
     background-image: url('../img/10.html初階.png');
+=======
+#galleryImage10 {
+    background-image: url('../img/img10.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage11 {
+<<<<<<< HEAD
     background-image: url('../img/11.html進階.png');
+=======
+    background-image: url('../img/img11.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage12 {
+<<<<<<< HEAD
     background-image: url('../img/12.img101C++leetcode初階解體.png');
+=======
+    background-image: url('../img/img12.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage13 {
+<<<<<<< HEAD
     background-image: url('../img/13.img101sql.png');
+=======
+    background-image: url('../img/img13.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage14 {
+<<<<<<< HEAD
     background-image: url('../img/14.react.png');
+=======
+    background-image: url('../img/img14.png');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage15 {
+<<<<<<< HEAD
     background-image: url('../img/15.java基礎.png');
+=======
+    background-image: url('../img/img15.jpg');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage16 {
+<<<<<<< HEAD
     background-image: url('../img/16.java進階.png');
+=======
+    background-image: url('../img/img16.png');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage17 {
+<<<<<<< HEAD
     background-image: url('../img/17.演算法實戰班.png');
+=======
+    background-image: url('../img/img23.png');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage18 {
+<<<<<<< HEAD
     background-image: url('../img/18.python初階.png');
+=======
+    background-image: url('../img/img34.png');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage19 {
+<<<<<<< HEAD
     background-image: url('../img/28.png');
+=======
+    background-image: url('../img/img35.png');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #galleryImage20 {
+<<<<<<< HEAD
     background-image: url('../img/29.jpg');
+=======
+    background-image: url('../img/img36.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage21 {
+    background-image: url('../img/img37.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage22 {
+    background-image: url('../img/img38.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage23 {
+    background-image: url('../img/img39.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage24 {
+    background-image: url('../img/img40.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage25 {
+    background-image: url('../img/img41.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage26 {
+    background-image: url('../img/img42.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage27 {
+    background-image: url('../img/img43.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage28 {
+    background-image: url('../img/img44.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage29 {
+    background-image: url('../img/img45.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage30 {
+    background-image: url('../img/img46.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage31 {
+    background-image: url('../img/img47.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage32 {
+    background-image: url('../img/img48.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galleryImage33 {
+    background-image: url('../img/img49.png');
+>>>>>>> c67631c (首次上傳 person-blog 專案)
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
