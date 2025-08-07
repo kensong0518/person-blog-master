@@ -92,39 +92,40 @@ button:focus {
 }
 
 /* 圖片設定 */
-#galleryImage1 { background-image: url('../img/img1.jpg'); }
+#galleryImage1 { background-image: url('../img/1.專利.png'); }
 #galleryImage2 { background-image: url('../img/2.金牌.png'); }
-#galleryImage3 { background-image: url('../img/3.img16.png'); }
+#galleryImage3 { background-image: url('../img/3..png'); }
 #galleryImage4 { background-image: url('../img/4.img48.png'); }
-#galleryImage5 { background-image: url('../img/img5.jpg'); }
-#galleryImage6 { background-image: url('../img/img6.jpg'); }
-#galleryImage7 { background-image: url('../img/img7.jpg'); }
-#galleryImage8 { background-image: url('../img/img8.jpg'); }
-#galleryImage9 { background-image: url('../img/img9.jpg'); }
-#galleryImage10 { background-image: url('../img/img10.jpg'); }
-#galleryImage11 { background-image: url('../img/img11.jpg'); }
-#galleryImage12 { background-image: url('../img/img12.jpg'); }
-#galleryImage13 { background-image: url('../img/img13.jpg'); }
-#galleryImage14 { background-image: url('../img/img14.png'); }
-#galleryImage15 { background-image: url('../img/img15.jpg'); }
-#galleryImage16 { background-image: url('../img/img16.png'); }
-#galleryImage17 { background-image: url('../img/img23.png'); }
-#galleryImage18 { background-image: url('../img/img34.png'); }
-#galleryImage19 { background-image: url('../img/img35.png'); }
-#galleryImage20 { background-image: url('../img/img36.png'); }
-#galleryImage21 { background-image: url('../img/img37.png'); }
-#galleryImage22 { background-image: url('../img/img38.png'); }
-#galleryImage23 { background-image: url('../img/img39.png'); }
-#galleryImage24 { background-image: url('../img/img40.png'); }
-#galleryImage25 { background-image: url('../img/img41.png'); }
-#galleryImage26 { background-image: url('../img/img42.png'); }
-#galleryImage27 { background-image: url('../img/img43.png'); }
-#galleryImage28 { background-image: url('../img/img44.png'); }
-#galleryImage29 { background-image: url('../img/img45.png'); }
-#galleryImage30 { background-image: url('../img/img46.png'); }
-#galleryImage31 { background-image: url('../img/img47.png'); }
-#galleryImage32 { background-image: url('../img/img48.png'); }
-#galleryImage33 { background-image: url('../img/img49.png'); }
+#galleryImage5 { background-image: url('../img/5.c++基礎.png'); }
+#galleryImage6 { background-image: url('../img/6.c++進階.png'); }
+#galleryImage7 { background-image: url('../img/7.c++leetcode進階解題.png'); }
+#galleryImage8 { background-image: url('../img/8.c++初階解題.png'); }
+#galleryImage9 { background-image: url('../img/9.c++演算法.png'); }
+#galleryImage10 { background-image: url('../img/10.html初階.png'); }
+#galleryImage11 { background-image: url('../img/11.html進階.png'); }
+#galleryImage12 { background-image: url('../img/12.img101C++leetcode初階解體.png'); }
+#galleryImage13 { background-image: url('../img/13.img101sql.png'); }
+#galleryImage14 { background-image: url('../img/14.react.png'); }
+#galleryImage15 { background-image: url('../img/15.java基礎.png'); }
+#galleryImage16 { background-image: url('../img/16.java進階.png'); }
+#galleryImage17 { background-image: url('../img/17.演算法實戰班.png'); }
+#galleryImage18 { background-image: url('../img/18.python初階.png'); }
+#galleryImage19 { background-image: url('../img/19..jpg'); }
+#galleryImage20 { background-image: url('../img/20..jpg'); }
+#galleryImage21 { background-image: url('../img/21..jpg'); }
+#galleryImage22 { background-image: url('../img/22..jpg'); }
+#galleryImage23 { background-image: url('../img/23..jpg'); }
+#galleryImage24 { background-image: url('../img/24..jpg'); }
+#galleryImage25 { background-image: url('../img/25..jpg'); }
+#galleryImage26 { background-image: url('../img/26..jpg'); }
+#galleryImage27 { background-image: url('../img/27..jpg'); }
+#galleryImage28 { background-image: url('../img/28..jpg'); }
+#galleryImage29 { background-image: url('../img/29..jpg'); }
+#galleryImage30 { background-image: url('../img/30..jpg'); }
+#galleryImage31 { background-image: url('../img/31..jpg'); }
+#galleryImage32 { background-image: url('../img/32..jpg'); }
+#galleryImage33 { background-image: url('../img/33..png'); }
+#galleryImage33 { background-image: url('../img/34..jpg'); }
 
 /*=============================================
 =                   Footer                    =
