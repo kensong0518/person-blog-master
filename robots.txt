@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kensong0518.github.io/person-blog-master/sitemap.xml
