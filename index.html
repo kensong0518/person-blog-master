@@ -409,7 +409,7 @@
 
     <div class="foot">
         © <span id="year"></span> 宋祐嘉 Ken Song · 軟體工程師作品集
-        <span id="views" style="margin-left:10px;opacity:.8;"><i class="fas fa-eye"></i> 瀏覽次數 <b id="viewCount">—</b></span>
+        <span id="views" style="margin-left:10px;opacity:.8;"><i class="fas fa-user-friends"></i> 累計訪客 <b id="viewCount">—</b></span>
     </div>
 
     <!-- Lightbox -->
@@ -421,15 +421,21 @@
     <button id="goTop" aria-label="回到頂端"><i class="fas fa-chevron-up"></i></button>
 
     <script src="./js/main.js"></script>
-    <!-- 頁面瀏覽次數計數器 -->
+    <!-- 累計訪客計數器：同一瀏覽器只計一次（用 localStorage 去重） -->
     <script>
       (function () {
         var el = document.getElementById('viewCount');
-        fetch('https://abacus.jasoncameron.dev/hit/kensong0518-personblog/home')
+        var ns = 'kensong0518-personblog', key = 'home';
+        var seen = false;
+        try { seen = localStorage.getItem('visited_' + key) === '1'; } catch (e) {}
+        // 沒來過 → 用 hit 累加並記住；來過 → 用 get 只讀取不重複計算
+        var url = 'https://abacus.jasoncameron.dev/' + (seen ? 'get' : 'hit') + '/' + ns + '/' + key;
+        fetch(url)
           .then(function (r) { return r.json(); })
           .then(function (d) {
             var n = (d && d.value != null) ? d.value : (d && d.count);
             if (el && n != null) el.textContent = Number(n).toLocaleString();
+            if (!seen) { try { localStorage.setItem('visited_' + key, '1'); } catch (e) {} }
           })
           .catch(function () {
             var box = document.getElementById('views');
