@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宋祐嘉 Ken Song｜履歷（AI-First 全端工程師）</title>
+    <meta name="description" content="宋祐嘉（Ken Song）線上履歷。AI-First 全端工程師，深度使用 Claude／Claude CLI 協作、極速交付。可下載 Word 版。">
+
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <style>
+        :root {
+            --bg: #070b15; --surface: rgba(255, 255, 255, .035); --border: rgba(255, 255, 255, .09);
+            --text: #e8edf7; --text-2: #9aa6bd; --text-3: #69748b;
+            --cyan: #22d3ee; --teal: #2dd4bf; --amber: #fbbf24;
+            --grad: linear-gradient(100deg, #22d3ee, #6366f1 55%, #a855f7);
+            --font-head: "Space Grotesk", "Noto Sans TC", sans-serif;
+            --font-body: "Noto Sans TC", system-ui, sans-serif;
+            --font-mono: "JetBrains Mono", monospace;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--font-body); color: var(--text-2); background: var(--bg);
+            line-height: 1.7;
+            background-image: radial-gradient(900px 500px at 80% -10%, rgba(99, 102, 241, .14), transparent 60%),
+                radial-gradient(700px 500px at -10% 20%, rgba(34, 211, 238, .1), transparent 55%);
+            min-height: 100vh;
+        }
+        a { color: var(--cyan); text-decoration: none; transition: .2s; }
+        .wrap { max-width: 880px; margin: 0 auto; padding: 28px 22px 80px; }
+
+        /* toolbar */
+        .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 26px; }
+        .toolbar .spacer { flex: 1; }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px;
+            font-weight: 600; font-size: .9rem; border: 1px solid var(--border); cursor: pointer;
+            font-family: var(--font-body); transition: .2s; }
+        .btn-primary { background: var(--grad); color: #fff; border: none; box-shadow: 0 10px 30px rgba(99, 102, 241, .35); }
+        .btn-primary:hover { transform: translateY(-2px); }
+        .btn-outline { background: rgba(255, 255, 255, .03); color: var(--text); }
+        .btn-outline:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-2px); }
+        .btn-back { color: var(--text-2); }
+        .btn-back:hover { color: var(--cyan); }
+
+        /* sheet */
+        .sheet { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 44px 46px; }
+
+        .head h1 { font-family: var(--font-head); font-size: 2.3rem; color: #fff; letter-spacing: -.02em; }
+        .head h1 small { font-size: 1.3rem; color: var(--teal); font-weight: 600; }
+        .head .role { color: var(--text-2); font-weight: 600; margin-top: 4px; font-size: 1.02rem; }
+        .head .meta { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .9rem; color: var(--text-2); }
+        .head .meta a { color: var(--cyan); }
+        .head .meta i { color: var(--teal); margin-right: 5px; }
+        .head .links { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .head .links a { font-size: .84rem; padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px; color: var(--text); }
+        .head .links a:hover { border-color: var(--cyan); color: var(--cyan); }
+
+        .ai-banner { margin: 24px 0 6px; padding: 16px 20px; border-radius: 14px;
+            border: 1px solid rgba(45, 212, 191, .35); background: linear-gradient(135deg, rgba(34, 211, 238, .1), rgba(99, 102, 241, .08)); }
+        .ai-banner b { color: #fff; }
+        .ai-banner i { color: var(--teal); }
+
+        h2.sec { font-family: var(--font-head); font-size: 1.18rem; color: #fff; margin: 30px 0 14px;
+            padding-bottom: 8px; border-bottom: 2px solid rgba(45, 212, 191, .5); display: flex; align-items: center; gap: 9px; }
+        h2.sec i { color: var(--teal); font-size: 1rem; }
+
+        .row { display: grid; grid-template-columns: 130px 1fr; gap: 6px 16px; margin-bottom: 11px; }
+        .row .k { color: var(--teal); font-weight: 700; font-size: .92rem; }
+        .row .v { color: var(--text); }
+        @media (max-width: 560px) { .row { grid-template-columns: 1fr; gap: 2px; } }
+
+        p.lead { color: var(--text); margin-bottom: 12px; }
+        .item { margin-bottom: 16px; }
+        .item h3 { font-size: 1.04rem; color: #fff; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 4px; }
+        .item .tagm { font-size: .72rem; font-weight: 700; padding: 2px 9px; border-radius: 999px;
+            background: rgba(251, 191, 36, .14); color: var(--amber); border: 1px solid rgba(251, 191, 36, .3); }
+        .item p { color: var(--text-2); }
+        .item .ln { font-size: .86rem; margin-top: 3px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 8px; }
+        .tag { font-family: var(--font-mono); font-size: .78rem; padding: 4px 11px; border-radius: 7px;
+            background: rgba(99, 102, 241, .12); color: #c7d2fe; border: 1px solid rgba(99, 102, 241, .25); }
+        .tag.alt { background: rgba(34, 211, 238, .1); color: #a5f3fc; border-color: rgba(34, 211, 238, .25); }
+        .foot { text-align: center; color: var(--text-3); font-size: .82rem; margin-top: 34px; }
+
+        /* print */
+        @media print {
+            @page { margin: 14mm; }
+            body { background: #fff !important; color: #1e293b; }
+            .toolbar { display: none; }
+            .wrap { max-width: 100%; padding: 0; }
+            .sheet { border: none; border-radius: 0; padding: 0; background: #fff; }
+            .head h1, .head h1 small, .item h3, h2.sec { color: #0f172a !important; -webkit-print-color-adjust: exact; }
+            .row .k, h2.sec i, .head .meta i { color: #0f766e !important; }
+            .row .v, p.lead, .item p, .head .role, .head .meta { color: #1e293b !important; }
+            h2.sec { border-bottom-color: #0f766e !important; }
+            .ai-banner { background: #f0fdfa !important; border-color: #99f6e4 !important; -webkit-print-color-adjust: exact; }
+            .ai-banner b, .ai-banner { color: #134e4a !important; }
+            .tag, .tag.alt { background: #f1f5f9 !important; color: #334155 !important; border-color: #cbd5e1 !important; -webkit-print-color-adjust: exact; }
+            .head .links { display: none; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="toolbar">
+            <a href="./index.html" class="btn btn-back"><i class="fas fa-arrow-left"></i> 返回作品集</a>
+            <span class="spacer"></span>
+            <a href="./Ken-Song-Resume.docx" class="btn btn-outline" download><i class="far fa-file-word"></i> 下載 Word 履歷</a>
+            <button class="btn btn-primary" onclick="window.print()"><i class="fas fa-file-pdf"></i> 列印 / 存成 PDF</button>
+        </div>
+
+        <article class="sheet">
+            <!-- HEAD -->
+            <header class="head">
+                <h1>宋祐嘉 <small>Ken Song</small></h1>
+                <p class="role">AI-First 全端開發者 · 再興高中 · 程式資訊老師</p>
+                <div class="meta">
+                    <span><i class="fas fa-envelope"></i><a href="mailto:kensong0518@gmail.com">kensong0518@gmail.com</a></span>
+                    <span><i class="fab fa-line"></i>LINE：ken0989233036</span>
+                </div>
+                <div class="links">
+                    <a href="./index.html"><i class="fas fa-globe"></i> 作品集</a>
+                    <a href="https://github.com/kensong0518" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://hackmd.io/@JnXvfsBHTiuH4f59P-15Fw" target="_blank" rel="noopener"><i class="fas fa-pen-nib"></i> HackMD</a>
+                    <a href="https://gleeful-valkyrie-494d4e.netlify.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </header>
+
+            <div class="ai-banner">
+                <i class="fas fa-robot"></i> <b>AI 優先開發：</b>日常以 Claude 協作設計、撰寫、除錯與重構，並用 Claude CLI／Cowork 跑自動化開發流程，把全新小型專案的交付時間壓到極短——這個作品集網站本身就是 AI 協作快速完成的成果。
+            </div>
+
+            <!-- 應徵職務 -->
+            <h2 class="sec"><i class="fas fa-bullseye"></i> 應徵職務</h2>
+            <p class="lead">全端工程師／前端工程師／後端工程師（AI-First 開發）</p>
+
+            <!-- 自我推薦 -->
+            <h2 class="sec"><i class="fas fa-user"></i> 自我推薦</h2>
+            <p>我這幾年最大的轉變，是把開發流程整個換成「AI 優先」。我具備獨立完成作品的底子（前端、後端、資料庫、IoT 都實作過），也保有對新工具、新技術的高度興奮感。駕馭 AI 對我來說不是取代思考，而是讓我把心力放在專案架構與細節打磨，用極短時間把想法變成可運行的產品。</p>
+
+            <!-- 核心優勢 -->
+            <h2 class="sec"><i class="fas fa-bolt"></i> 核心優勢</h2>
+            <div class="row"><div class="k">極速交付</div><div class="v">能把構思快速轉化為可運行的 Web 作品；本履歷所在的作品集網站，就是用 AI 協作快速完成並上線的成果。</div></div>
+            <div class="row"><div class="k">AI 協作</div><div class="v">深度使用 Claude 進行開發，並有使用 Claude CLI／Cowork 跑自動化開發流程的實作經驗。</div></div>
+            <div class="row"><div class="k">全棧思考</div><div class="v">前端 React／Vue／JavaScript、後端 Java Spring Boot／Python／SQL、資料庫與 IoT 都能獨立落地。</div></div>
+            <div class="row"><div class="k">團隊共創</div><div class="v">現職為程式資訊老師，擅長把複雜的技術與 AI 協作邏輯講清楚、與人高效溝通。</div></div>
+
+            <!-- 技術技能 -->
+            <h2 class="sec"><i class="fas fa-layer-group"></i> 技術技能</h2>
+            <div class="item">
+                <p><b style="color:var(--teal)">AI 協作　</b></p>
+                <div class="tags">
+                    <span class="tag alt">Claude</span><span class="tag alt">Claude Code / CLI</span><span class="tag alt">Cowork</span><span class="tag alt">AI 輔助開發</span><span class="tag alt">Prompt 工程</span><span class="tag alt">自動化開發流程</span>
+                </div>
+            </div>
+            <div class="item">
+                <p><b style="color:var(--teal)">前端　</b></p>
+                <div class="tags">
+                    <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">React Native</span><span class="tag">Vue</span><span class="tag">jQuery</span><span class="tag">Bootstrap</span><span class="tag">RWD 響應式</span>
+                </div>
+            </div>
+            <div class="item">
+                <p><b style="color:var(--teal)">後端　</b></p>
+                <div class="tags">
+                    <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Spring MVC</span><span class="tag">Hibernate</span><span class="tag">MyBatis</span><span class="tag">Python</span><span class="tag">C++</span><span class="tag">PHP</span>
+                </div>
+            </div>
+            <div class="item">
+                <p><b style="color:var(--teal)">資料庫 / 工具　</b></p>
+                <div class="tags">
+                    <span class="tag alt">MySQL</span><span class="tag alt">SQL</span><span class="tag alt">JDBC</span><span class="tag alt">Firebase</span><span class="tag alt">Git</span><span class="tag alt">Linux</span><span class="tag alt">資料結構</span><span class="tag alt">演算法 / LeetCode</span>
+                </div>
+            </div>
+
+            <!-- 代表作品 -->
+            <h2 class="sec"><i class="fas fa-star"></i> 代表作品（可作為面試 Demo）</h2>
+            <div class="item">
+                <h3>用 AI 協作打造的作品集網站 <span class="tagm"><i class="fas fa-robot"></i> AI 極速交付</span></h3>
+                <p>以「AI 優先」流程，與 Claude 協作從版面、RWD、SEO 到結構化資料快速迭代，並用 Claude CLI／Cowork 調整與部署，把構思在極短時間內變成上線網站。</p>
+                <p class="ln"><a href="https://kensong0518.github.io/person-blog-master/" target="_blank" rel="noopener"><i class="fas fa-link"></i> kensong0518.github.io/person-blog-master</a></p>
+            </div>
+            <div class="item">
+                <h3>歐洲自助遊旅遊網站 <span class="tagm">前端 · Live</span></h3>
+                <p>完整的歐洲自助旅遊規劃網站，含主視覺、熱門目的地、精選行程、三步驟流程與電子報訂閱等模組，採響應式設計、元件化 UI。</p>
+                <p class="ln"><a href="https://gleeful-valkyrie-494d4e.netlify.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a> ·
+                   <a href="https://github.com/kensong0518/voyago-fullstack" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></p>
+            </div>
+            <div class="item">
+                <h3>IoT 溫度監控智能門禁系統 <span class="tagm"><i class="fas fa-medal"></i> 2022 發明展金牌</span></h3>
+                <p>以物聯網打造的溫度監控與即時警報系統：感測器即時監測、微控制器判斷閾值，異常時無線推播並上傳雲端，支援遠端監控。榮獲 2022 高雄發明展金牌。</p>
+            </div>
+            <div class="item">
+                <h3>Python 與 C++ 教學練習網站 <span class="tagm">教材設計 · Live</span></h3>
+                <p>為學生打造的程式設計教學與線上練習網站，整理基礎觀念與練習題，作為再興高中課程輔助教材。</p>
+                <p class="ln"><a href="https://kensong0518.github.io/Python_-Basic-Programming-Concepts-and-Practice/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> 開啟練習網站</a></p>
+            </div>
+
+            <!-- 學習與經歷 -->
+            <h2 class="sec"><i class="fas fa-route"></i> 學習與經歷</h2>
+            <div class="row"><div class="k">現職</div><div class="v">再興高中・程式資訊老師，教授程式設計與資訊課程，將實務開發經驗轉化為教學。</div></div>
+            <div class="row"><div class="k">AI 開發轉型</div><div class="v">近期全面採用 AI-First 開發流程，以 Claude 與 Claude CLI／Cowork 大幅壓縮專案交付時間。</div></div>
+            <div class="row"><div class="k">培訓進修</div><div class="v">國立臺灣大學推廣教育資訊系統訓練班；緯育 TibaMe「Java JDBC 開發實作班」「Java 雲端服務開發技術養成班」。</div></div>
+            <div class="row"><div class="k">自學擴充</div><div class="v">透過 Hahow、Bilibili 等資源自學 Spring Boot、Vue、MyBatis、Spring MVC、Swagger、JavaWeb。</div></div>
+            <div class="row"><div class="k">獲獎 / 專利</div><div class="v">2022 高雄發明展金牌，並累積專利申請與展示經驗。</div></div>
+
+            <!-- 進修課程 -->
+            <h2 class="sec"><i class="fas fa-graduation-cap"></i> 進修課程（台大資訊系統訓練班 結業）</h2>
+            <p>C/C++ 基礎程式設計、資料結構與 C++ 進階、C++ 程式解題與演算法（初／中級、APCS、LeetCode）、演算法實戰班、Java 基礎與進階程式設計、Python 程式設計、SQL 資料分析、HTML5／CSS3／jQuery／Bootstrap 網頁設計、React Native 開發入門。</p>
+
+            <p class="foot">© <span id="y"></span> 宋祐嘉 Ken Song · 線上履歷</p>
+        </article>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
