@@ -8,7 +8,7 @@
 
     <title>宋祐嘉 Ken Song｜AI Agent 工程師 · AI 顧問／專案管理 · 全端開發作品集</title>
     <meta name="description" content="宋祐嘉（Ken Song）AI Agent 工程師 · AI 顧問／專案管理。專注把人類流程 Agent 化：熟悉 agent harness、guardrails、tool calling 與 MCP 協定，每天以 Claude Code／Cowork 等 agent 工具完成開發。具備 Java Spring Boot、Vue、Python 全端與紮實 CS 基礎，能把 Agent 整合進真實企業系統（Voyago 全端專案已上線）；現職資訊科技老師並兼家教，習慣把複雜技術拆解成非技術人員聽得懂的語言，能承接需求訪談、專案規劃與跨部門溝通。">
-    <meta name="keywords" content="宋祐嘉, Ken Song, AI Agent, Agent 工程師, Agent Software Engineer, AI 顧問, AI Consultant, AI 專案管理, AI PM, Project Management, 需求訪談, LLM 應用工程師, LLM, MCP, Model Context Protocol, A2A, tool calling, agent harness, guardrails, multi-agent, Claude Code, 全端工程師, Java, Spring Boot, Vue, Python, 作品集, portfolio">
+    <meta name="keywords" content="宋祐嘉, Ken Song, AI Agent, Agent 工程師, Agent Software Engineer, AI 顧問, AI Consultant, AI 專案管理, AI PM, Project Management, 需求訪談, LLM 應用工程師, LLM, MCP, Model Context Protocol, A2A, tool calling, agent harness, guardrails, multi-agent, RAG, Retrieval-Augmented Generation, 檢索增強生成, 私有化部署, 地端部署, Docker, Prompt 工程, Claude Code, 全端工程師, Java, Spring Boot, Vue, Python, 作品集, portfolio">
     <meta name="author" content="宋祐嘉 Ken Song">
 
     <!-- Open Graph -->
@@ -39,7 +39,7 @@
       "image": "https://kensong0518.github.io/person-blog-master/img/ken照片.jpg",
       "jobTitle": "AI Agent 工程師 · AI 顧問／專案管理 · 全端開發",
       "email": "mailto:kensong0518@gmail.com",
-      "knowsAbout": ["AI Agent","LLM 應用開發","Agent Harness","Guardrails","Tool Calling","MCP (Model Context Protocol)","A2A","Multi-Agent","Claude Code","Cowork","Prompt 工程","AI 顧問","專案管理","需求訪談","前端開發","後端開發","全端開發","Java","Spring Boot","Vue","Python","C++","SQL","IoT"],
+      "knowsAbout": ["AI Agent","LLM 應用開發","Agent Harness","Guardrails","Tool Calling","MCP (Model Context Protocol)","A2A","Multi-Agent","RAG (Retrieval-Augmented Generation)","私有化部署","Docker 地端部署","Claude Code","Cowork","Prompt 工程","AI 顧問","專案管理","需求訪談","前端開發","後端開發","全端開發","Java","Spring Boot","Vue","Python","C++","SQL","IoT"],
       "alumniOf": [
         { "@type": "Organization", "name": "國立臺灣大學推廣教育 資訊系統訓練班" },
         { "@type": "Organization", "name": "緯育 TibaMe" }
@@ -161,7 +161,17 @@
 
                     <div style="padding:18px 18px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.03);">
                         <h4 style="margin:0 0 8px;display:flex;align-items:center;gap:9px;"><i class="fas fa-plug" style="color:#22d3ee;"></i> Tool Calling · MCP · A2A</h4>
-                        <p style="margin:0;color:#aab9d6;font-size:.94rem;line-height:1.7;">在日常使用 agent 工具的過程中，熟悉 tool calling 與 MCP（Model Context Protocol）的運作方式——Agent 如何呼叫外部工具、拿到結果再決策，並持續深化 A2A 等 agent 間協作協定。</p>
+                        <p style="margin:0;color:#aab9d6;font-size:.94rem;line-height:1.7;">在日常使用 agent 工具的過程中，熟悉 tool calling 與 MCP（Model Context Protocol）的運作方式——Agent 如何呼叫外部工具、讀取企業資料庫與本地檔案、拿到結果再決策，打通資料孤島，並持續深化 A2A 等 agent 間協作協定。</p>
+                    </div>
+
+                    <div style="padding:18px 18px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.03);">
+                        <h4 style="margin:0 0 8px;display:flex;align-items:center;gap:9px;"><i class="fas fa-search" style="color:#22d3ee;"></i> RAG 架構 · 降低幻覺</h4>
+                        <p style="margin:0;color:#aab9d6;font-size:.94rem;line-height:1.7;">鑽研檢索增強生成（RAG）的完整流程——從資料切塊、向量化、檢索到生成，讓 Agent 的回答字字有據，而不是憑空生成，這是企業導入 AI Agent 最在意的可信度問題。</p>
+                    </div>
+
+                    <div style="padding:18px 18px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.03);">
+                        <h4 style="margin:0 0 8px;display:flex;align-items:center;gap:9px;"><i class="fas fa-server" style="color:#22d3ee;"></i> 私有化部署 · 資料安全</h4>
+                        <p style="margin:0;color:#aab9d6;font-size:.94rem;line-height:1.7;">熟悉以 Docker 進行地端架設與本地模型串接，理解企業資料 100% 不上雲的隱私與安全需求，能在成本、效能與資料主權之間做出合理取捨。</p>
                     </div>
 
                     <div style="padding:18px 18px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.03);">
@@ -197,7 +207,7 @@
                 </div>
             </div>
 
-            <p class="reveal" style="text-align:center;color:#8b9ac0;font-size:.92rem;margin-top:8px;">我正把重心轉進 AI Agent 領域，正處於快速成長的階段——每天以 agent 工具實作開發、熟悉 harness 與 guardrails，並以紮實的全端與 CS 基礎把服務接進真實系統，正持續補強 multi-agent 與 RAG 的實戰。無論是要親手把 Agent 做出來的工程師角色，或是要對外溝通需求、規劃交付的顧問／PM 角色，我都能勝任。給我一個舞台，我會用最快的速度把它做出來。</p>
+            <p class="reveal" style="text-align:center;color:#8b9ac0;font-size:.92rem;margin-top:8px;">我正把重心轉進 AI Agent 領域，正處於快速成長的階段——每天以 agent 工具實作開發、熟悉 harness 與 guardrails，並以紮實的全端與 CS 基礎把服務接進真實系統，正系統性補強 RAG 架構、私有化部署與 multi-agent 的實戰。無論是要親手把 Agent 做出來的工程師角色，或是要對外溝通需求、規劃交付的顧問／PM 角色，我都能勝任。給我一個舞台，我會用最快的速度把它做出來。</p>
         </div>
     </section>
 
@@ -244,12 +254,13 @@
                 </div>
                 <div class="skill-card reveal">
                     <h3><i class="fas fa-robot"></i> AI Agent / LLM 應用</h3>
-                    <p>把 LLM、工具呼叫與流程整合成會自主執行任務的 Agent；每天以 Claude Code／Cowork 等 agent 工具完成開發，熟悉 harness、guardrails 與 MCP 協定，並在意 token 用量與效能。</p>
+                    <p>把 LLM、工具呼叫與流程整合成會自主執行任務的 Agent；每天以 Claude Code／Cowork 等 agent 工具完成開發，熟悉 harness、guardrails 與 MCP 協定，並在意 token 用量與效能。同時鑽研 RAG 檢索增強生成架構、地端私有化部署（Docker）與系統化 Prompt 工程方法，讓 Agent 能安全串接企業自有資料。</p>
                     <div class="tag-row">
                         <span class="tag alt">AI Agent</span><span class="tag alt">LLM 應用</span><span class="tag alt">Agent Harness</span>
                         <span class="tag alt">Guardrails</span><span class="tag alt">Tool Calling</span><span class="tag alt">MCP</span>
                         <span class="tag alt">A2A</span><span class="tag alt">Multi-Agent</span><span class="tag alt">Token 用量優化</span>
-                        <span class="tag alt">Claude Code / Cowork</span><span class="tag alt">Prompt 工程</span><span class="tag alt">RAG（進修中）</span>
+                        <span class="tag alt">Claude Code / Cowork</span><span class="tag alt">系統化 Prompt 工程</span><span class="tag alt">RAG 檢索增強生成</span>
+                        <span class="tag alt">私有化部署</span><span class="tag alt">Docker 地端部署</span>
                     </div>
                 </div>
                 <div class="skill-card reveal">
@@ -447,7 +458,7 @@
                 <div class="t-item reveal">
                     <span class="when">近期</span>
                     <h4>轉進 AI Agent 工程 × 顧問／PM</h4>
-                    <p>每天以 agent harness（Claude Code／Cowork）完成多步驟開發任務，實際操作 tool calling 與自主流程、體會 guardrails 與安全邊界，熟悉 MCP 協定，正持續深化 multi-agent 與 RAG；同時把教學累積的溝通與拆解能力，帶進 AI 顧問與專案管理的實務應用。</p>
+                    <p>每天以 agent harness（Claude Code／Cowork）完成多步驟開發任務，實際操作 tool calling 與自主流程、體會 guardrails 與安全邊界，熟悉 MCP 協定如何讀取企業資料庫與本地檔案；並系統性鑽研 RAG 檢索增強生成架構、Docker 地端私有化部署與系統化 Prompt 工程方法，持續深化 multi-agent 實戰。同時把教學累積的溝通與拆解能力，帶進 AI 顧問與專案管理的實務應用。</p>
                 </div>
             </div>
         </div>
