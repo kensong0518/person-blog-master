@@ -85,18 +85,27 @@
         .tag { font-family: var(--font-mono); font-size: .78rem; padding: 4px 11px; border-radius: 7px;
             background: rgba(99, 102, 241, .12); color: #c7d2fe; border: 1px solid rgba(99, 102, 241, .25); }
         .tag.alt { background: rgba(34, 211, 238, .1); color: #a5f3fc; border-color: rgba(34, 211, 238, .25); }
+        .item ul { margin: 6px 0 0 1.1em; }
+        .item ul li { color: var(--text-2); margin-bottom: 4px; }
         .foot { text-align: center; color: var(--text-3); font-size: .82rem; margin-top: 34px; }
 
         /* print */
         @media print {
-            @page { margin: 14mm; }
-            body { background: #fff !important; color: #1e293b; }
+            @page { margin: 9mm; }
+            body { background: #fff !important; color: #1e293b; line-height: 1.5; }
             .toolbar { display: none; }
             .wrap { max-width: 100%; padding: 0; }
             .sheet { border: none; border-radius: 0; padding: 0; background: #fff; }
+            h2.sec { margin: 14px 0 8px; }
+            .item { margin-bottom: 8px; }
+            .item ul { margin-top: 3px; }
+            .item ul li { margin-bottom: 1px; }
+            .row { margin-bottom: 5px; }
+            .ai-banner { margin: 14px 0 4px; padding: 12px 16px; }
+            .head .meta, .head .links { margin-top: 8px; }
             .head h1, .head h1 small, .item h3, h2.sec { color: #0f172a !important; -webkit-print-color-adjust: exact; }
             .row .k, h2.sec i, .head .meta i { color: #0f766e !important; }
-            .row .v, p.lead, .item p, .head .role, .head .meta { color: #1e293b !important; }
+            .row .v, p.lead, .item p, .item ul li, .head .role, .head .meta { color: #1e293b !important; }
             h2.sec { border-bottom-color: #0f766e !important; }
             .ai-banner { background: #f0fdfa !important; border-color: #99f6e4 !important; -webkit-print-color-adjust: exact; }
             .ai-banner b, .ai-banner { color: #134e4a !important; }
@@ -192,10 +201,20 @@
                 <p>感測器即時監測溫度，異常時無線推播警報並上雲端，支援遠端監控。完整走過軟硬整合到雲端回傳的鏈路。</p>
             </div>
 
+            <!-- 工作經歷 -->
+            <h2 class="sec"><i class="fas fa-briefcase"></i> 工作經歷</h2>
+            <div class="item">
+                <h3>資訊科技老師 <span class="tagm">資訊教育機構 · 2026/03–2026/09</span></h3>
+                <ul>
+                    <li>教授資訊科技／程式設計課程，負責課程規劃、教材設計與課堂授課。</li>
+                    <li>自製一整套互動式程式教學平台（264 題）供課堂使用，並建立 AI 產出教材的品質驗證流程（詳見上方代表作品）。</li>
+                    <li>將複雜技術概念拆解為學生聽得懂的說法，並以實作確認學習成效。</li>
+                </ul>
+            </div>
+
             <!-- 學習與經歷 -->
             <h2 class="sec"><i class="fas fa-route"></i> 學習與經歷</h2>
             <div class="row"><div class="k">求職狀態</div><div class="v">已離職，可立即上班。</div></div>
-            <div class="row"><div class="k">工作經歷</div><div class="v">資訊科技老師（資訊教育機構，2026/03–2026/09）</div></div>
             <div class="row"><div class="k">學歷</div><div class="v">亞東科技大學 電子工程系（2019/09–2024/01）</div></div>
             <div class="row"><div class="k">進修</div><div class="v">台大資訊系統訓練班（Java／Python／SQL／網頁設計）；TibaMe Java JDBC 與雲端服務開發課程。</div></div>
             <div class="row"><div class="k">獲獎 / 專利</div><div class="v">2022 高雄發明展金牌（IoT 智能門禁專題），並累積專利申請經驗。</div></div>
