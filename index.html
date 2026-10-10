@@ -268,10 +268,10 @@
                     <div class="project-body">
                         <span class="kicker"><i class="fas fa-star"></i> 精選作品 · 全端 · 前端已上線</span>
                         <h3>Voyago 歐洲自助遊預訂平台</h3>
-                        <p>從資料庫設計、後端 API 到前端畫面，由我一人獨立完成。我刻意補上課堂範例常跳過、但實務一定會遇到的東西：登入除了帳密還接 <b>Google ID Token 後端驗證</b>、密碼走 BCrypt、登入端點做<b>限流</b>擋暴力破解；列表頁用 <b>LAZY + fetch join 解 N+1</b>、熱門查詢上 Caffeine 快取；權限不靠前端藏按鈕，後端以 <code>@PreAuthorize</code> 強制，STAFF 專屬端點就算被繞過也擋得住。單元測試接 GitHub Actions CI，API 文件由 springdoc 自動產出。</p>
+                        <p>從資料庫設計、後端 API 到前端畫面，由我一人獨立完成。我刻意補上課堂範例常跳過、但實務一定會遇到的東西：登入除了帳密還接 <b>Google ID Token 後端驗證</b>、密碼走 BCrypt、登入端點做<b>限流</b>擋暴力破解；列表頁用 <b>LAZY + fetch join 解 N+1</b>、熱門查詢上 Caffeine 快取；權限不靠前端藏按鈕，後端以 <code>@PreAuthorize</code> 強制，STAFF 專屬端點就算被繞過也擋得住。單元測試接 GitHub Actions CI，API 文件由 springdoc 自動產出。後續再補上 <b>WebSocket 即時客服聊天</b>（STOMP handshake 掛 JWT 驗證，斷線自動退回原有輪詢）、付款成功後的<b>非同步 Email 通知</b>（獨立執行緒池處理，刻意把會被 lazy-loading 炸掉的欄位先在交易內讀成純資料物件再跨執行緒傳遞）、收藏功能從前端 localStorage 換成真正的後端 API（idempotent 設計擋併發重複收藏），以及 STAFF 專用的後台統計 API；新增的 Controller 整合測試（H2 + MockMvc）涵蓋匿名／會員／STAFF 三種角色的權限邊界。</p>
                         <p style="color:#8b9ac0;font-size:.9rem;border-left:2px solid rgba(34,211,238,.4);padding-left:12px;margin-top:10px;">展示站跑的是<b style="color:#a5b4d4;">純前端示範模式</b>：免費後端閒置會睡，一睡 Demo 就變死連結，所以前端內建 mock fallback（同一套 UI 與 API 介面），註冊、登入、搜尋、下訂流程照樣走得完。完整三層可在本機一鍵啟動，面試時我可以當場跑給你看。</p>
                         <div class="project-tags">
-                            <span class="tag">Vue 3</span><span class="tag">Spring Boot 3</span><span class="tag">MySQL 8</span><span class="tag">JWT + BCrypt</span><span class="tag">Google 登入</span><span class="tag">登入限流</span><span class="tag">N+1 優化</span><span class="tag">快取</span><span class="tag">RBAC</span><span class="tag">JUnit + CI</span>
+                            <span class="tag">Vue 3</span><span class="tag">Spring Boot 3</span><span class="tag">MySQL 8</span><span class="tag">JWT + BCrypt</span><span class="tag">Google 登入</span><span class="tag">登入限流</span><span class="tag">N+1 優化</span><span class="tag">快取</span><span class="tag">RBAC</span><span class="tag">WebSocket</span><span class="tag">@Async</span><span class="tag">整合測試</span><span class="tag">JUnit + CI</span>
                         </div>
                         <div class="project-actions">
                             <a href="https://gleeful-valkyrie-494d4e.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> 開啟 Live Demo</a>
