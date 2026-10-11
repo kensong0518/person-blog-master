@@ -5,86 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>宋祐嘉 Ken Song｜履歷（AI 應用工程師）</title>
-    <meta name="description" content="宋祐嘉（Ken Song）線上履歷。AI 應用工程師，為 AI 產出建立規則式品質閘門：用結構解析、實際編譯執行與壓力測試，把 445 處靜默錯誤修正、12.63% 出題器異常率降到 0；後端 Java／Spring Boot 3、MySQL 8 獨立完成 Voyago 預訂平台，前端 Vue 3。已離職，可立即上班。可下載 Word 版。">
+    <meta name="description" content="宋祐嘉（Ken Song）線上履歷。AI 應用工程師，獨立開發全端專案 Voyago（Java／Spring Boot 3＋Vue 3），並建立 AI 產出內容的品質驗證流程，抓出並修正 445 處錯誤。已離職，可立即上班。可下載 Word 版。">
 
     <link rel="icon shortcut" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
     <style>
         :root {
-            --bg: #070b15; --surface: rgba(255, 255, 255, .035); --border: rgba(255, 255, 255, .09);
+            --bg: #0b0e14; --surface: rgba(255, 255, 255, .03); --border: rgba(255, 255, 255, .09);
             --text: #e8edf7; --text-2: #9aa6bd; --text-3: #69748b;
-            --cyan: #22d3ee; --teal: #2dd4bf; --amber: #fbbf24;
-            --grad: linear-gradient(100deg, #22d3ee, #6366f1 55%, #a855f7);
-            --font-head: "Space Grotesk", "Noto Sans TC", sans-serif;
+            --teal: #2dd4bf;
             --font-body: "Noto Sans TC", system-ui, sans-serif;
-            --font-mono: "JetBrains Mono", monospace;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: var(--font-body); color: var(--text-2); background: var(--bg);
             line-height: 1.7;
-            background-image: radial-gradient(900px 500px at 80% -10%, rgba(99, 102, 241, .14), transparent 60%),
-                radial-gradient(700px 500px at -10% 20%, rgba(34, 211, 238, .1), transparent 55%);
             min-height: 100vh;
         }
-        a { color: var(--cyan); text-decoration: none; transition: .2s; }
-        .wrap { max-width: 880px; margin: 0 auto; padding: 28px 22px 80px; }
+        a { color: var(--teal); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .wrap { max-width: 860px; margin: 0 auto; padding: 28px 22px 80px; }
 
         /* toolbar */
         .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 26px; }
         .toolbar .spacer { flex: 1; }
-        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px;
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 8px;
             font-weight: 600; font-size: .9rem; border: 1px solid var(--border); cursor: pointer;
-            font-family: var(--font-body); transition: .2s; }
-        .btn-primary { background: var(--grad); color: #fff; border: none; box-shadow: 0 10px 30px rgba(99, 102, 241, .35); }
-        .btn-primary:hover { transform: translateY(-2px); }
-        .btn-outline { background: rgba(255, 255, 255, .03); color: var(--text); }
-        .btn-outline:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-2px); }
+            font-family: var(--font-body); }
+        .btn-primary { background: var(--teal); color: #06201c; border: none; }
+        .btn-outline { background: transparent; color: var(--text); }
+        .btn-outline:hover, .btn-primary:hover { opacity: .88; }
         .btn-back { color: var(--text-2); }
-        .btn-back:hover { color: var(--cyan); }
+        .btn-back:hover { color: var(--teal); }
 
         /* sheet */
-        .sheet { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 44px 46px; }
+        .sheet { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 40px 44px; }
 
-        .head h1 { font-family: var(--font-head); font-size: 2.3rem; color: #fff; letter-spacing: -.02em; }
-        .head h1 small { font-size: 1.3rem; color: var(--teal); font-weight: 600; }
-        .head .role { color: var(--text-2); font-weight: 600; margin-top: 4px; font-size: 1.02rem; }
+        .head h1 { font-size: 2rem; color: #fff; font-weight: 800; }
+        .head h1 small { font-size: 1.15rem; color: var(--teal); font-weight: 600; margin-left: 4px; }
+        .head .role { color: var(--text-2); font-weight: 600; margin-top: 4px; font-size: 1rem; }
         .head .meta { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .9rem; color: var(--text-2); }
-        .head .meta a { color: var(--cyan); }
+        .head .meta a { color: var(--teal); }
         .head .meta i { color: var(--teal); margin-right: 5px; }
         .head .links { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
-        .head .links a { font-size: .84rem; padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px; color: var(--text); }
-        .head .links a:hover { border-color: var(--cyan); color: var(--cyan); }
+        .head .links a { font-size: .84rem; padding: 5px 12px; border: 1px solid var(--border); border-radius: 6px; color: var(--text); }
+        .head .links a:hover { border-color: var(--teal); color: var(--teal); text-decoration: none; }
 
-        .ai-banner { margin: 24px 0 6px; padding: 16px 20px; border-radius: 14px;
-            border: 1px solid rgba(45, 212, 191, .35); background: linear-gradient(135deg, rgba(34, 211, 238, .1), rgba(99, 102, 241, .08)); }
-        .ai-banner b { color: #fff; }
-        .ai-banner i { color: var(--teal); }
+        .summary { margin: 22px 0 6px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--text); }
 
-        h2.sec { font-family: var(--font-head); font-size: 1.18rem; color: #fff; margin: 30px 0 14px;
-            padding-bottom: 8px; border-bottom: 2px solid rgba(45, 212, 191, .5); display: flex; align-items: center; gap: 9px; }
-        h2.sec i { color: var(--teal); font-size: 1rem; }
+        h2.sec { font-size: 1.05rem; color: #fff; margin: 28px 0 12px;
+            padding-bottom: 7px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+        h2.sec i { color: var(--teal); font-size: .95rem; }
 
-        .row { display: grid; grid-template-columns: 130px 1fr; gap: 6px 16px; margin-bottom: 11px; }
+        .row { display: grid; grid-template-columns: 130px 1fr; gap: 6px 16px; margin-bottom: 10px; }
         .row .k { color: var(--teal); font-weight: 700; font-size: .92rem; }
         .row .v { color: var(--text); }
         @media (max-width: 560px) { .row { grid-template-columns: 1fr; gap: 2px; } }
 
         p.lead { color: var(--text); margin-bottom: 12px; }
         .item { margin-bottom: 16px; }
-        .item h3 { font-size: 1.04rem; color: #fff; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 4px; }
-        .item .tagm { font-size: .72rem; font-weight: 700; padding: 2px 9px; border-radius: 999px;
-            background: rgba(251, 191, 36, .14); color: var(--amber); border: 1px solid rgba(251, 191, 36, .3); }
+        .item h3 { font-size: 1rem; color: #fff; font-weight: 700; margin-bottom: 4px; }
+        .item h3 .tagm { font-size: .82rem; font-weight: 500; color: var(--text-3); margin-left: 6px; }
         .item p { color: var(--text-2); }
         .item .ln { font-size: .86rem; margin-top: 3px; }
-        .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 8px; }
-        .tag { font-family: var(--font-mono); font-size: .78rem; padding: 4px 11px; border-radius: 7px;
-            background: rgba(99, 102, 241, .12); color: #c7d2fe; border: 1px solid rgba(99, 102, 241, .25); }
-        .tag.alt { background: rgba(34, 211, 238, .1); color: #a5f3fc; border-color: rgba(34, 211, 238, .25); }
+        .skills p.grp { color: var(--text); margin-bottom: 10px; }
+        .skills p.grp b { color: var(--teal); font-weight: 700; }
         .item ul { margin: 6px 0 0 1.1em; }
         .item ul li { color: var(--text-2); margin-bottom: 4px; }
         .foot { text-align: center; color: var(--text-3); font-size: .82rem; margin-top: 34px; }
@@ -92,25 +81,26 @@
         /* print */
         @media print {
             @page { margin: 9mm; }
-            body { background: #fff !important; color: #1e293b; line-height: 1.5; }
+            body { background: #fff !important; color: #1e293b; line-height: 1.32; font-size: 13.8px; }
             .toolbar { display: none; }
             .wrap { max-width: 100%; padding: 0; }
             .sheet { border: none; border-radius: 0; padding: 0; background: #fff; }
-            h2.sec { margin: 14px 0 8px; }
-            .item { margin-bottom: 8px; }
-            .item ul { margin-top: 3px; }
-            .item ul li { margin-bottom: 1px; }
-            .row { margin-bottom: 5px; }
-            .ai-banner { margin: 14px 0 4px; padding: 12px 16px; }
-            .head .meta, .head .links { margin-top: 8px; }
+            h2.sec { margin: 9px 0 6px; }
+            .item { margin-bottom: 6px; }
+            .item ul { margin-top: 2px; }
+            .item ul li { margin-bottom: 0; }
+            .row { margin-bottom: 3px; }
+            .summary { margin: 8px 0 2px; padding-top: 7px; }
+            .skills p.grp { margin-bottom: 5px; }
+            .head .meta, .head .links { margin-top: 5px; }
             .head h1, .head h1 small, .item h3, h2.sec { color: #0f172a !important; -webkit-print-color-adjust: exact; }
-            .row .k, h2.sec i, .head .meta i { color: #0f766e !important; }
-            .row .v, p.lead, .item p, .item ul li, .head .role, .head .meta { color: #1e293b !important; }
-            h2.sec { border-bottom-color: #0f766e !important; }
-            .ai-banner { background: #f0fdfa !important; border-color: #99f6e4 !important; -webkit-print-color-adjust: exact; }
-            .ai-banner b, .ai-banner { color: #134e4a !important; }
-            .tag, .tag.alt { background: #f1f5f9 !important; color: #334155 !important; border-color: #cbd5e1 !important; -webkit-print-color-adjust: exact; }
+            .row .k, h2.sec i, .head .meta i, .skills p.grp b { color: #0f766e !important; }
+            .row .v, p.lead, .item p, .item ul li, .head .role, .head .meta, .summary, .skills p.grp { color: #1e293b !important; }
+            .item h3 .tagm { color: #64748b !important; }
+            h2.sec { border-bottom-color: #cbd5e1 !important; }
+            .summary { border-top-color: #cbd5e1 !important; }
             .head .links { display: none; }
+            .foot { margin-top: 10px; }
         }
     </style>
 </head>
@@ -141,64 +131,37 @@
                 </div>
             </header>
 
-            <div class="ai-banner">
-                <i class="fas fa-user-check"></i> <b>專業摘要：</b>AI 應用工程師。用結構解析、實際編譯與壓力測試，為 AI 產出建立規則式品質閘門，把 <b>445 處靜默錯誤</b>修正、<b>12.63% 出題器異常率</b>降到 0；獨立完成 Java／Spring Boot 3＋Vue 3 全端專案 Voyago，資料庫、後端、前端一人包辦。已離職，可立即上班，<b>歡迎約時間聊聊、當場展示 Demo。</b>
-            </div>
+            <p class="summary">AI 應用工程師。獨立開發全端訂房平台 Voyago（Java／Spring Boot 3＋Vue 3，資料庫、後端、前端一人完成）；也做過 AI 產出內容的品質驗證，靠程式碼實際編譯與壓力測試，抓出並修正 445 處錯誤。已離職，可立即上班。</p>
 
             <!-- 應徵職務 -->
             <h2 class="sec"><i class="fas fa-bullseye"></i> 應徵職務</h2>
             <p class="lead">AI Agent 工程師／LLM 應用工程師／全端工程師／後端工程師</p>
 
-            <!-- 核心優勢 -->
-            <h2 class="sec"><i class="fas fa-bolt"></i> 核心優勢</h2>
-            <div class="row"><div class="k">AI 應用</div><div class="v">LLM API 串接（Anthropic／OpenAI），用在教學內容自動化、文件結構化、網站生成與開發流程工具四類場景。</div></div>
-            <div class="row"><div class="k">品質閘門</div><div class="v">結構解析＋實際編譯執行＋10 萬次壓測的三層驗證流程，不合格就攔下來，修正後全數歸零。</div></div>
-            <div class="row"><div class="k">全棧能力</div><div class="v">Voyago 預訂平台一人完成，含 JWT 驗證、登入限流、快取、N+1 優化、單元測試接 CI。</div></div>
-            <div class="row"><div class="k">溝通表達</div><div class="v">曾任資訊科技老師，擅長把複雜技術講給非技術背景的人聽懂。</div></div>
-
             <!-- 技術技能 -->
             <h2 class="sec"><i class="fas fa-layer-group"></i> 技術技能</h2>
-            <div class="item">
-                <p><b style="color:var(--teal)">AI 應用　</b></p>
-                <div class="tags">
-                    <span class="tag">LLM API 串接（Anthropic / OpenAI）</span><span class="tag">Prompt 設計與輸出驗證</span><span class="tag">規則式品質閘門</span><span class="tag">結構化資料抽取</span><span class="tag">Agent 開發工具日常使用（Claude Code、Cowork）</span>
-                </div>
-            </div>
-            <div class="item">
-                <p><b style="color:var(--teal)">後端　</b></p>
-                <div class="tags">
-                    <span class="tag">Java / Spring Boot 3</span><span class="tag">Python</span><span class="tag">RESTful API 設計</span><span class="tag">JWT 驗證</span><span class="tag">MySQL 8（schema 設計、查詢優化）</span><span class="tag">資料庫設計</span><span class="tag">Git</span>
-                </div>
-            </div>
-            <div class="item">
-                <p><b style="color:var(--teal)">前端　</b></p>
-                <div class="tags">
-                    <span class="tag">Vue 3（Composition API）</span><span class="tag">JavaScript</span><span class="tag">HTML / CSS</span><span class="tag">響應式版面</span>
-                </div>
-            </div>
-            <div class="item">
-                <p><b style="color:var(--teal)">學習中　</b></p>
-                <div class="tags">
-                    <span class="tag alt">RAG 檢索架構</span><span class="tag alt">MCP</span><span class="tag alt">Docker 地端部署</span><span class="tag alt">向量資料庫</span>
-                </div>
+            <div class="skills">
+                <p class="grp"><b>AI 應用　</b>LLM API 串接（Anthropic、OpenAI）、Prompt 設計與輸出檢查、自動化品質驗證、結構化資料抽取、日常使用 AI 開發工具（Claude Code、Cowork）</p>
+                <p class="grp"><b>後端　</b>Java、Spring Boot 3、Python、RESTful API 設計、JWT 驗證、MySQL 8（schema 設計、查詢優化）、資料庫設計、Git</p>
+                <p class="grp"><b>前端　</b>Vue 3（Composition API）、JavaScript、HTML／CSS、響應式版面</p>
+                <p class="grp"><b>學習中　</b>RAG 檢索架構、MCP、Docker 地端部署、向量資料庫</p>
             </div>
 
             <!-- 代表作品 -->
             <h2 class="sec"><i class="fas fa-star"></i> 代表作品（可作為面試 Demo）</h2>
             <div class="item">
                 <h3>Voyago 歐洲自助遊預訂平台 <span class="tagm">全端 · 前端已上線</span></h3>
-                <p>資料庫、後端 API、前端畫面一人完成。JWT＋BCrypt、Google 登入驗證、登入限流、Caffeine 快取、N+1 優化、後端權限控管、單元測試接 CI。展示站為純前端示範模式，完整三層可本機一鍵啟動，面試時可當場跑。</p>
+                <p>資料庫、後端 API、前端畫面一人完成。做了 JWT＋BCrypt、Google 登入驗證、登入限流、Caffeine 快取、N+1 查詢優化、後端權限控管、單元測試接 CI。展示站為純前端示範模式，完整三層可本機一鍵啟動，面試時可當場跑。</p>
                 <p class="ln"><a href="https://gleeful-valkyrie-494d4e.netlify.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a> ·
                    <a href="https://github.com/kensong0518/voyago-fullstack" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></p>
             </div>
             <div class="item">
-                <h3>互動式程式教學平台 ＋ AI 產出品質閘門 <span class="tagm">AI 應用 · 已交付使用</span></h3>
-                <p>自製 264 題互動教材，內容由 AI 協助產出。建立結構解析＋實際編譯執行＋10 萬次壓測的驗證流程，揪出 445 處靜默錯誤、12.63% 的出題器異常率，修正後全部歸零。</p>
+                <h3>互動式程式教學平台 ＋ AI 品質驗證 <span class="tagm">AI 應用 · 已交付使用</span></h3>
+                <p>自製 264 題互動教材，內容由 AI 協助產出。寫了驗證腳本：剖析程式碼結構、實際編譯跑一遍、再跑 10 萬次壓力測試，抓出 445 處靜默錯誤、12.63% 的出題器異常率，修正後全部歸零。</p>
                 <p class="ln"><a href="https://papaya-sundae-4cb489.netlify.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a></p>
             </div>
             <div class="item">
                 <h3>IoT 溫度監控智能門禁系統 <span class="tagm">軟硬整合 · 2022 高雄發明展金牌</span></h3>
-                <p>感測器即時監測溫度，異常時無線推播警報並上雲端，支援遠端監控。完整走過軟硬整合到雲端回傳的鏈路。</p>
+                <p>感測器即時監測溫度，異常時無線推播警報並上雲端，支援遠端監控。軟硬整合到雲端回傳整條路都做過，並累積專利申請經驗。</p>
             </div>
 
             <!-- 工作經歷 -->
@@ -206,9 +169,9 @@
             <div class="item">
                 <h3>資訊科技老師 <span class="tagm">資訊教育機構 · 2026/03–2026/09</span></h3>
                 <ul>
-                    <li>教授資訊科技／程式設計課程，負責課程規劃、教材設計與課堂授課。</li>
+                    <li>教資訊科技／程式設計課程，自己規劃課程、做教材、上課。</li>
                     <li>自製一整套互動式程式教學平台（264 題）供課堂使用，並建立 AI 產出教材的品質驗證流程（詳見上方代表作品）。</li>
-                    <li>將複雜技術概念拆解為學生聽得懂的說法，並以實作確認學習成效。</li>
+                    <li>把複雜技術概念拆解成學生聽得懂的說法，用實作確認學生真的學會。</li>
                 </ul>
             </div>
 
